@@ -1,3 +1,3 @@
-module github.com/jmarcantony/caesercipher
+module github.com/jmarcantony/caesarcipher
 
 go 1.17
