@@ -43,17 +43,17 @@ func main() {
 	if *enc {
 		encoded := caesercipher.Encode(s, *sh)
 		if *o != "" {
-			write(encoded)
+			write([]byte(encoded))
 		} else {
-			fmt.Printf("%s\n", encoded)
+			fmt.Println(encoded)
 		}
 	}
 	if *dec {
 		decoded := caesercipher.Decode(s, *sh)
 		if *o != "" {
-			write(decoded)
+			write([]byte(decoded))
 		} else {
-			fmt.Printf("%s\n", decoded)
+			fmt.Println(decoded)
 		}
 	}
 }

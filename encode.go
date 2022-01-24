@@ -1,6 +1,7 @@
 package caesercipher
 
-func Encode(s string, shift int) []byte {
+// Encode encodes string s to caeser cipher by int shift
+func Encode(s string, shift int) string {
 	encoded := make([]byte, len(s))
 	for i, c := range s {
 		if c >= 97 && c <= 122 {
@@ -19,5 +20,5 @@ func Encode(s string, shift int) []byte {
 			encoded[i] = byte(c)
 		}
 	}
-	return encoded
+	return string(encoded)
 }

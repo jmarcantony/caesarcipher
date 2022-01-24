@@ -11,7 +11,7 @@ func TestDecode(t *testing.T) {
 		{2, "okffng-Qwvb", "middle-Outz"},
 	}
 	for _, c := range cases {
-		s := string(Decode(c.s, c.shift))
+		s := Decode(c.s, c.shift)
 		if s != c.want {
 			t.Errorf("got %q, want %q", s, c.want)
 		}

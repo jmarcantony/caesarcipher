@@ -1,6 +1,7 @@
 package caesercipher
 
-func Decode(s string, shift int) []byte {
+// Decode decodes string s to plain string by shift
+func Decode(s string, shift int) string {
 	decoded := make([]byte, len(s))
 	for i, c := range s {
 		if c >= 97 && c <= 122 {
@@ -19,5 +20,5 @@ func Decode(s string, shift int) []byte {
 			decoded[i] = byte(c)
 		}
 	}
-	return decoded
+	return string(decoded)
 }
