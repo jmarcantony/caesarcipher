@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/jmarcantony/caesercipher"
+	"github.com/jmarcantony/caesarcipher"
 )
 
 var (
@@ -41,7 +41,7 @@ func main() {
 		log.Fatalln("Shift value cannot be negative")
 	}
 	if *enc {
-		encoded := caesercipher.Encode(s, *sh)
+		encoded := caesarcipher.Encode(s, *sh)
 		if *o != "" {
 			write([]byte(encoded))
 		} else {
@@ -49,7 +49,7 @@ func main() {
 		}
 	}
 	if *dec {
-		decoded := caesercipher.Decode(s, *sh)
+		decoded := caesarcipher.Decode(s, *sh)
 		if *o != "" {
 			write([]byte(decoded))
 		} else {
