@@ -1,4 +1,4 @@
-package caesercipher
+package caesarcipher
 
 var (
 	alphabetsSmol = "abcdefghijklmnopqrstuvwxyz"
