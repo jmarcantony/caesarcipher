@@ -7,13 +7,13 @@ go get github.com/jmarcantony/caesarcipher
 ```
 
 ## Examples
-### Encode to caeser cipher
+### Encode to caesar cipher
 ```go
-toEncode := "caesercipher"
+toEncode := "caesarcipher"
 encoded := caesarcipher.Encode(toEncode, 5) // returns "hfjxjwhnumjw"
 ```
 
-### Decode from caeser cipher
+### Decode from caesar cipher
 ```go
 toDecode := "hfjxjwhnumjw"
 decoded := caesarcipher.Decode(toDecode, 5) // returns "caesercipher"
