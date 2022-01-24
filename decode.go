@@ -1,4 +1,4 @@
-package caesercipher
+package caesarcipher
 
 // Decode decodes string s to plain string by shift
 func Decode(s string, shift int) string {
