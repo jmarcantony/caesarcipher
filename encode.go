@@ -1,6 +1,6 @@
-package caesercipher
+package caesarcipher
 
-// Encode encodes string s to caeser cipher by int shift
+// Encode encodes string s to caesar cipher by int shift
 func Encode(s string, shift int) string {
 	encoded := make([]byte, len(s))
 	for i, c := range s {
